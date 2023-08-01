@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+img {
+  height: 40rem;
+}
+.fixed-mode {
+  position: fixed !important;
+}
+
+#info {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  z-index: 9999;
+}
+
+/* #parallax-demo {
+  position: fixed;
+} */
+#hero {
+  background-color: #ebeaea;
+}
+
+#hero .container .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero-left,
+.hero-right {
+  padding: 5%;
+}
+
+.outer-wrapper {
+  position: relative;
+  height: 100vh;
+}
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: aquamarine;
+  overflow-y: hidden;
+}
+.scroll-contents {
+  /* display: inline-block; */
+
+  position: relative;
+}
+.scroll-content {
+  position: absolute;
+}
+
+.skroll-images {
+  position: fixed;
+  top: 19%;
+  right: -5%;
+  height: 100vh;
+}
+.skroll-image {
+  position: fixed;
+}
+
+.section-three {
+  height: 100vh;
+  background-color: red;
+  z-index: 1000;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  background-color: burlywood;
+}

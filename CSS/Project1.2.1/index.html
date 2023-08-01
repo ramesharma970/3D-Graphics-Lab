@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Text Animation</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        perspective: 1000px;
+        background-color: #222;
+      }
+
+      .container {
+        position: relative;
+        transform-style: preserve-3d;
+        animation: rotateAndPulse 10s infinite linear;
+      }
+
+      @keyframes rotateAndPulse {
+        0% {
+          transform: translateZ(-100px) rotateY(0deg) scale(1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        50% {
+          transform: translateZ(-200px) rotateY(180deg) scale(1.2);
+          box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          transform: translateZ(-100px) rotateY(360deg) scale(1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      .text {
+        font-size: 72px;
+        font-weight: bold;
+        padding: 20px;
+        background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        transform-style: preserve-3d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">3D Text</div>
+    </div>
+  </body>
+</html>

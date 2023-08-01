@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KING</title>
+    <style>
+      body {
+        background-image: url("https://www.vectornator.io/blog/content/images/2022/03/611b830385d20348a9809a8e_Cover-Album-Covers--1-.png");
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 500px;
+      }
+      .card {
+        width: 200px;
+        height: 300px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 4s;
+      }
+
+      .card:hover {
+        transform: rotateY(180deg);
+      }
+
+      .front,
+      .back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        backface-visibility: hidden;
+      }
+
+      .front {
+        /* background-color: #ff6384; */
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn70g7MX9RMM9GbIjbvLQlbgSDRNmjt3FhDg&usqp=CAU");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .back {
+        /* background-color: #36a2eb; */
+        background-image: url("https://e0.pxfuel.com/wallpapers/194/447/desktop-wallpaper-ace-king-black-golden-card.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="front"></div>
+        <div class="back"></div>
+      </div>
+    </div>
+  </body>
+</html>

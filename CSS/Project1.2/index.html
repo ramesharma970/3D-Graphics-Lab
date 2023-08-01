@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Gun</title>
+    <style>
+      body {
+        /* background-image: url("https://www.vectornator.io/blog/content/images/2022/03/611b830385d20348a9809a8e_Cover-Album-Covers--1-.png"); */
+        background-color: #000000;
+      }
+      h1 {
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .text3d {
+        display: flex;
+        font-size: 48px;
+        font-weight: bold;
+        color: #ff6384;
+        text-transform: uppercase;
+        position: relative;
+        /* margin-top: 5rem; */
+        animation: textAnimation 10s infinite;
+      }
+      .inner-container {
+        /* background: linear-gradient(
+          to right,
+          #ff0000,
+          #ff7f00,
+          #ffff00,
+          #00ff00,
+          #0000ff,
+          #4b0082,
+          #9400d3
+        ); */
+
+        border-radius: 1rem;
+      }
+      .inner-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      @keyframes textAnimation {
+        0%,
+        100% {
+          transform: translateZ(0) rotateY(0);
+        }
+        50% {
+          transform: translateZ(-100px) rotateY(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>M2 Browning Heavy Machine Gun Low-poly 3D model</h1>
+    <div class="container">
+      <div class="text3d">
+        <!-- <div class="inner-container"></div> -->
+        <div class="inner-container">
+          <img
+            src="https://img2.cgtrader.com/items/2146051/c76f2204b1/m2-browning-heavy-machine-gun-3d-model-low-poly-max-obj-fbx.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
